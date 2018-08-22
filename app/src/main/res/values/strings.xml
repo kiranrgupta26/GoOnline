@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">VS</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string-array name="stationary">
+        <item>Pencil</item>
+        <item>Rubber</item>
+        <item>Scale</item>
+        <item>Colors</item>
+        <item>Cover Rolls</item>
+    </string-array>
+
+    <string-array name="notebooks">
+        <item>Sundaram</item>
+        <item>Navneet</item>
+        <item>Classmate</item>
+    </string-array>
+
+
+    <string-array name="samplepapers">
+        <item>Oswal</item>
+    </string-array>
+
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+
+    <string-array name="select_class">
+        <item>Std 3</item>
+        <item>Std 4</item>
+        <item>Std 5</item>
+        <item>Std 6</item>
+        <item>Std 7</item>
+        <item>Std 8</item>
+    </string-array>
+
+    <string-array name="select_publisher">
+        <item>Golden</item>
+        <item>Full Marks</item>
+    </string-array>
+
+    <string-array name="accountlist">
+        <item>My Address</item>
+        <item>My Orders</item>
+    </string-array>
+</resources>

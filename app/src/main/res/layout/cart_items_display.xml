@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/cartitems"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_alignTop="@+id/tvitemname"
+            android:layout_toLeftOf="@+id/tvitemprice"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp" />
+
+        <TextView
+             android:id="@+id/tvitemname"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tvitemprice"
+            android:layout_alignEnd="@+id/tvitemprice"
+            android:layout_alignLeft="@+id/tvitemprice"
+            android:layout_alignStart="@+id/tvitemprice" />
+
+
+        <TextView
+            android:id="@+id/tvitemprice"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvitemname"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+        <TextView
+            android:text="Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/tvitemprice"
+            android:layout_centerHorizontal="true" />
+
+
+        <Spinner
+            android:id="@+id/tvquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignRight="@+id/btnremove"
+            android:layout_alignEnd="@+id/btnremove" />
+
+        <Button
+            android:id="@+id/btnremove"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="132dp"
+            android:layout_height="40dp"
+            android:text="Remove"
+            android:paddingLeft="0dp"
+            android:gravity="left"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+</RelativeLayout>

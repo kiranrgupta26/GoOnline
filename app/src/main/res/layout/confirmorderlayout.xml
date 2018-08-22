@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#626466"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme = "@style/ThemeOverlay.AppCompat.Light">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Summary"
+            android:textColor="@android:color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="left"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="46dp"
+    android:gravity="left"
+    android:paddingLeft="25dp"
+    android:id="@+id/relativeLayout">
+
+
+    <TextView
+    android:id="@+id/total"
+     android:textSize="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Total"
+    />
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="totalcost"
+        android:textSize="20dp"
+        android:gravity="end"
+        android:paddingRight="25dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <!--Next -->
+    <TextView
+        android:id="@+id/charges"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping Charges"
+        android:layout_below="@+id/total"
+        />
+
+    <TextView
+        android:id="@+id/tvshippingcharges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:text="charges"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/tvtotal"
+        android:layout_alignEnd="@+id/tvtotal"
+        android:layout_alignLeft="@+id/tvtotal"
+        android:layout_alignStart="@+id/tvtotal" />
+
+    <!--Next -->
+    <TextView
+        android:id="@+id/amount"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payable Amount"
+        android:layout_below="@+id/charges"
+        />
+
+    <TextView
+        android:id="@+id/tvpayableamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charges"
+        android:text="amount"
+        android:textSize="25dp"
+        android:layout_alignRight="@+id/tvshippingcharges"
+        android:layout_alignEnd="@+id/tvshippingcharges"
+        android:layout_alignLeft="@+id/tvshippingcharges"
+        android:layout_alignStart="@+id/tvshippingcharges" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp">
+    <TextView
+        android:id="@+id/tvaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="56dp"
+        android:text="My Address"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvmyaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvaddress"
+        android:layout_marginTop="17dp"
+        android:text="My address" />
+
+    <Button
+        android:id="@+id/btnaddaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvmyaddress"
+        android:text="Add Address" />
+    </RelativeLayout>
+</RelativeLayout>

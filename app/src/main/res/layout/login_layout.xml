@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#626466"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme = "@style/ThemeOverlay.AppCompat.Light">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vishal Stores"
+            android:textColor="@android:color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="left"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/etloginuser"
+        android:hint="Enter EmailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="129dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/loginpassword"
+        android:layout_alignEnd="@+id/loginpassword"
+        android:layout_alignLeft="@+id/loginpassword"
+        android:layout_alignStart="@+id/loginpassword" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/etloginuser"
+        android:layout_alignLeft="@+id/btnlogin"
+        android:layout_alignStart="@+id/btnlogin"
+        android:layout_alignRight="@+id/btnlogin"
+        android:layout_alignEnd="@+id/btnlogin" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="101dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnloginsignup"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/loginpassword"
+        android:layout_alignEnd="@+id/loginpassword" />
+
+    <TextView
+        android:text="Not Member Yet?"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnloginsignup"
+        android:layout_alignBottom="@+id/btnloginsignup"
+        android:layout_toLeftOf="@+id/btnloginsignup"
+        android:layout_toStartOf="@+id/btnloginsignup" />
+</RelativeLayout>
