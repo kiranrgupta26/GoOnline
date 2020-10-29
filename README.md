@@ -1,3 +1,2 @@
-# Online Shopping App
-An android app for online shopping
-
+# GoOnline
+GoOnline is an Online Shopping Android App.
