@@ -3,6 +3,7 @@ GoOnline is an Online Shopping Android App.
 
 # Tech/framework used
 - Java 
+- Node.js
 - Android Studio
 
 # Features
