@@ -21,4 +21,5 @@ GoOnline is an Online Shopping Android App.
 - Select the items to buy and its quantities.
 - Enter the payment details and click on Buy.
 
-License&copy;KiranGupta
+# License
+GoOnline&copy;KiranGupta
